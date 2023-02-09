@@ -1,3 +1,8 @@
+/**
+ * Programa pra que escrib la tabla de multiplicar introduciendo un número
+ * @CConde
+ */
+
 package Tema08;
 
 import Tema08.misFunciones.Varias;
