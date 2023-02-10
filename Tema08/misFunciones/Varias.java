@@ -149,7 +149,7 @@ public static int dimeSigno (int a){
   */
   public static void printTriangulo(char x, int t){
     for(int i=1; i<=t; i++){
-      for(int j=1; j<=n-i; j++){
+      for(int j=1; j<=t-i; j++){
         System.out.print(" ");
       }
 
