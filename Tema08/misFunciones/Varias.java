@@ -147,8 +147,8 @@ public static int dimeSigno (int a){
       - "c": carácter a utilizar
       - "n": número de líneas
   */
-  public static void printTriangulo(char c, int n){
-    for(int i=1; i<=n; i++){
+  public static void printTriangulo(char x, int t){
+    for(int i=1; i<=t; i++){
       for(int j=1; j<=n-i; j++){
         System.out.print(" ");
       }
