@@ -28,13 +28,3 @@ public class Ejercicio14 {
     Varias.printTiangulo(c,n);
   }
 }
-
-
-
-
-
-
-      
-  }
-  
-}
