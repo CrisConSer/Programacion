@@ -9,8 +9,6 @@ import Tema08.misFunciones.Varias;
 
 import java.util.Scanner;
 
-import javax.sql.rowset.spi.SyncResolver;
-
 public class Ejercicio14 {
   public static void main (String [] args){
 
@@ -27,12 +25,8 @@ public class Ejercicio14 {
 
     System.out.println("**************************");
 
-    Varias.
-    
-
-  
-
-
+    Varias.printTiangulo(c,n);
+  }
 }
 
 
@@ -40,29 +34,7 @@ public class Ejercicio14 {
 
 
 
-
-   
-        /***************/
-
-        // carácter
-          System.out.print("Introduce el carácter a utilizar para imprimir el triángulo: ");
-            char c=s.next().charAt(0);
-
-        // nº de líneas
-          System.out.print("Introduce el número de líneas que debe tener el triángulo: ");
-            int n=s.nextInt();
-
-          System.out.println();
-
-        /***************/
-
-      // cierre scanner
-        s.close();
-
-    /*****************************************/
-
-    // debug
-      Varias.printTiangulo(c,n);
+      
   }
   
 }
