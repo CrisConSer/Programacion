@@ -141,7 +141,197 @@ public static int dimeSigno (int a){
       return b;
     }
   }
+/**
+    @info: función para imprimir un triángulo de n líneas
+    @param:
+      - "c": carácter a utilizar
+      - "n": número de líneas
+  */
+  public static void printTiangulo(char c, int n){
+    for(int i=1; i<=n; i++){
+      for(int j=1; j<=n-i; j++){
+        System.out.print(" ");
+      }
+
+      for(int j=1; j<=2*i-1; j++){
+        System.out.print(c);
+      }
+
+      System.out.println();
+    }
+  }
+
+/***************************************************/
+
+/**
+  @info: función para averiguar la letra del dni
+  @param x: dni
+  @return letra: letra 
+*/
+  public static char obtenerLetra(int dni){
+    // resto del dni
+      int resto = dni % 23;
+
+    /***************/
+
+    // variable para la letra
+      char letra;
+
+    /***************/
+
+      switch(resto){
+        case 0:
+          letra='T';
+        break;
+
+        case 1:
+          letra='R';
+        break;
+
+        case 2:
+          letra='W';
+        break;
+
+        case 3:
+          letra='A';
+        break;
+
+        case 4:
+          letra='G';
+        break;
+
+        case 5:
+          letra='M';
+        break;
+
+        case 6:
+          letra='Y';
+        break;
+
+        case 7:
+          letra='F';
+        break;
+
+        case 8:
+          letra='P';
+        break;
+
+        case 9:
+          letra='D';
+        break;
+
+        case 10:
+          letra='X';
+        break;
+
+        case 11:
+          letra='B';
+        break;
+
+        case 12:
+          letra='N';
+        break;
+
+        case 13:
+          letra='J';
+        break;
+
+        case 14:
+          letra='Z';
+        break;
+
+        case 15:
+          letra='S';
+        break;
+
+        case 16:
+          letra='Q';
+        break;
+
+        case 17:
+          letra='V';
+        break;
+
+        case 18:
+          letra='H';
+        break;
+
+        case 19:
+          letra='L';
+        break;
+
+        case 20:
+          letra='C';
+        break;
+
+        case 21:
+          letra='K';
+        break;
+
+        case 22:
+          letra='E';
+        break;
+
+        default:
+          letra=' ';
+      }
+
+    /***************/
+
+    // return
+      return letra;
+  }
+
+/***************************************************/
+
+/**
+  @info: función para imprimir un menú de dos opciones ("circunferencia" y "área")
+  @return opcion: opción seleccionada
+*/
+  public static int menu(){
+    // menú
+      System.out.println("1. Circunferencia");
+      System.out.println("2. Area");
+      System.out.println("3. Volumen");
+      System.out.println("4. Todas");
+      System.out.println("5. Salir");
+      System.out.print("\nElige una opción: ");
+
+    /******************/
+
+    // obtención de la opción
+      Scanner opcionScanner=new Scanner(System.in);
+        int opcion=opcionScanner.nextInt();
+
+    /******************/
+
+    // return
+      return opcion;
+  }
+
+/***************************************************/
+
+/**
+  @info: función para obtener un radio y retornarlo
+  @return radio: radio introducido
+*/
+  public static double pideRadio(){
+    // print
+      System.out.print("Introduce el radio: ");
+
+    /******************/
+
+    // obtención
+      Scanner radioScanner=new Scanner(System.in);
+        double radio=radioScanner.nextDouble();
+
+    /******************/
+
+    // return
+      return radio;
+  }
 }
+
 
 
   
