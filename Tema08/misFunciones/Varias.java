@@ -154,7 +154,7 @@ public static int dimeSigno (int a){
       }
 
       for(int j=1; j<=2*i-1; j++){
-        System.out.print(c);
+        System.out.print(t);
       }
 
       System.out.println();
@@ -316,20 +316,160 @@ public static int dimeSigno (int a){
   @return radio: radio introducido
 */
   public static double pideRadio(){
-    // print
       System.out.print("Introduce el radio: ");
 
-    /******************/
+      Scanner s=new Scanner(System.in);
 
-    // obtención
-      Scanner radioScanner=new Scanner(System.in);
-        double radio=radioScanner.nextDouble();
+      double radio=s.nextDouble();
 
-    /******************/
-
-    // return
       return radio;
   }
+
+  /**
+  @info: función para obtenre el número primo
+  @return esPrimo: radio introducido
+*/
+
+  public static boolean esPrimo(int x){
+  // si es 1 o menor, no es primo
+    if(x<=1){
+      return false;
+    }
+
+    for(int i=2; i<=x/2; i++){
+      if(x%i==0){
+        return false;
+      }
+    }
+  }
+
+/**
+  @info: función para obtener si numero es capicua
+  @return x: numero capicua 
+*/
+  public static boolean esCapicua(int x){
+    // variable auxiliar
+      int aux=x;
+
+    // número invertido
+      int rev=0;
+
+    // volteo
+      while(aux!=0) {
+          rev=rev*10+aux%10;
+          aux/=10;
+      }
+
+    // comprobación
+      if(x==rev){
+        return true;
+      }else{
+        return false;
+      }
+  } 
+
+/**
+  @info: función para obtener si numero es capicua o enseñarnos el siguiente
+  @return x: numero capicua 
+*/
+
+
+  public static int siguientePrimo(int x){
+    // siguiente número
+      int num=x+1;
+
+    // bucle
+    while(true){
+      // el número es primo por defecto
+        boolean primo=true;
+
+      // comprobación de si es primo
+        for(int i=2; i<=(num/2); i++){
+          // si no es primo, se acaba el bucle "for" y se sigue ejecutando el bucle "while"
+            if(num%i==0){
+              primo=false;
+
+              break;
+            }
+        }
+
+      /**************/
+
+      // si el número sacado del "for" es primo, se devuelve al "main"
+        if(primo){
+          return num;
+        }
+
+      /**************/
+
+      // si no es primo, no se devuelve al "main" y se aumenta en 1 unidad
+        num++;
+    }
+  }
+
+/**
+  @info: función para obtener la potencia con base y exponente
+  @return acum: devuelve el resultado
+*/
+
+  public static int potencia(int x, int y){
+    // variable acumulador
+      int acumulador=1;
+
+    /*************/
+
+    // se realiza tantas veces como indica el exponente
+      for(int i=0; i<y; i++){
+        acumulador*=x;
+      }
+
+    /*************/
+
+    // return
+      return acumulador;
+  }
+
+/**
+  @info: función para numero de digitos
+  @return acum: devuelve el nmero de digitos que tiene el numero introducido
+*/
+
+  public static int digitos(int x){
+  // variable para el total de dígitos
+    int numDigi=0;
+
+    while(x>0){
+      x/=10;
+
+      numDigi++;
+    }
+
+    return numDigi;
+  }
+
+/**
+@info: función para numero de digitos
+@return acum: devuelve el nmero de digitos que tiene el numero introducido
+*/
+
+  public static int voltea(int x){
+  // variable auxiliar
+    int aux=x;
+
+  // número invertido
+    int rev=0;
+
+  // volteo
+    while(aux!=0){
+      rev=rev*10+aux%10;
+      aux/=10;
+    }
+
+    return rev;
+  }
+
+
+
 }
 
 
