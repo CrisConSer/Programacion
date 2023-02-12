@@ -12,7 +12,7 @@ import java.util.Scanner;
 public class Ejercicio14 {
   public static void main (String [] args){
 
-    Scanner s = new Scanner(System.in);
+    Scanner s= new Scanner (System.in);
 
     // caracter
     System.out.print("Introduce el carácter a utilizar para la piramide: ");
@@ -25,6 +25,6 @@ public class Ejercicio14 {
 
     System.out.println("**************************");
 
-    Varias.printTriangulo(caracter, altura);
+    misFunciones.Varias.printTriangulo(caracter, altura);
   }
 }

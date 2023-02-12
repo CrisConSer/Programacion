@@ -7,8 +7,11 @@
  * @CConde
  */
 
+ package Tema08;
+
 import java.util.Scanner;
-import Tema08.misFunciones.Varias;
+
+import misFunciones.Varias;
 
 public class Ejercicio21 {
 

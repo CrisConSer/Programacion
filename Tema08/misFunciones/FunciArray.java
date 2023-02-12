@@ -1,7 +1,9 @@
-/*FunciaArray.java
+/**FunciaArray.java
 *Realizar una biblioteca con funciones sobre Arrays
 *@CConde
 */
+
+package misFunciones;
 
 public class FunciArray {
 

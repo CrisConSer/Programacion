@@ -4,6 +4,8 @@
  * cada número introducido nos dirá si es o no primo.
  * @CConde
  */
+package Tema08;
+
 import java.util.Scanner;
 
 import misFunciones.Varias;

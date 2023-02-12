@@ -24,7 +24,7 @@ public class Ejercicio15{
           System.out.println("************************");
 
       for(int i=0; i<t; i++){
-        System.out.print(FunciArray.arrayNaturales );
+        System.out.print(misFunciones.FunciArray);
       }
 
       System.out.print("|");
