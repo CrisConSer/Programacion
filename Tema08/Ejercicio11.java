@@ -5,7 +5,7 @@
 
 package Tema08;
 
-import Tema08.misFunciones.Varias;
+import misFunciones.Varias;
 
 import java.util.Scanner;
 
@@ -14,10 +14,10 @@ public class Ejercicio11{
     Scanner s= new Scanner(System.in);
 
     System.out.println("Introduce un número: ");
-      int numero=s.nextInt();
+      double numero=s.nextDouble();
 
     System.out.println("*******************************");
 
-    misFunciones.Varias(numero);
+    misFunciones.Varias.multiplica(numero);
   }
 }
