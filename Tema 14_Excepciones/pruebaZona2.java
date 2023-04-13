@@ -1,4 +1,4 @@
-/*
+/*Añadimos las líneas correspondientes a las excepciones
  * @CConde
  */
 
