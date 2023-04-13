@@ -3,7 +3,7 @@
 *la zona de compra-venta con 200 entradas disponibles y la zona vip
 *con 25 entradas disponibles. Hay que controlar que existen entradas antes de
 *venderlas.
-*La clase Zona con sus atributos y métodos se muestra a continuación:
+*Ahora vamos a añadirle las líneas correspondientes a las excepciones
 @CConde
  */
 
