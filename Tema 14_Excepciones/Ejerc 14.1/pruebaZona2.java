@@ -1,29 +1,29 @@
-/*Añadimos las líneas correspondientes a las excepciones
+/*
  * @CConde
  */
 
 import java.util.Scanner;
-public class pruebaZona{
+public class pruebaZona2{
 
   public static void main(String[] args){
-    // instancias
+     // instancias
       Zona zonaPrincipal=new Zona(1000);
       Zona zonaCompraVenta=new Zona(200);
       Zona zonaVIP=new Zona(25);
 
     /*********************************************/
 
-    // scanner
+     // scanner
       Scanner input=new Scanner(System.in);
       String opcion="";
 
     /*********************************************/
 
-    // menú
-    int opcionNum;
+     // menú
+    int opcionNum=0;
     int zonaNum;
     do{
-    // output
+     // output
     System.out.println("Menú:");
     System.out.println("1. Mostrar número de entradas libres");
     System.out.println("2. Vender entradas");
@@ -35,16 +35,20 @@ public class pruebaZona{
     Añadimos a partir de aqui las nuevas lineas*/
 
     opcion = input.nextLine();
-    
+
     try{
       opcionNum=Integer.parseInt(opcion);
     }
-    catch (Exception e){
-      opcionNum=0;
-    }
-        /************************/
+     /*Usamos la excepcion con getClass y getMessage */
 
-        // switch -- cambiamos el opcion por opcionNum
+    catch (Exception e){
+      zonaNum=0;
+      System.out.println("Excepcion: " + e.getClass());
+      System.out.println(("Error: " + e.getMessage()));
+      System.out.println("Este numero no es valido");
+    }
+      /************************/
+    // switch -- cambiamos el opcion por opcionNum
     switch(opcionNum){
         case 1:
           System.out.println("Entradas disponibles en la zona principal: "+zonaPrincipal.getEntradasPorVender());
@@ -67,6 +71,9 @@ public class pruebaZona{
             }
             catch (Exception e){
               zonaNum=0;
+              System.out.println("Excepcion: " + e.getClass());
+              System.out.println(("Error: " + e.getMessage()));
+              System.out.println("Este numero no es valido");
             }
 
           System.out.print("¿Cuántas entradas quieres? ");
@@ -105,7 +112,7 @@ public class pruebaZona{
 
     }while(opcionNum!=3);
 
-    // cierre de scanner
+     // cierre de scanner
     input.close();
   }
 }
