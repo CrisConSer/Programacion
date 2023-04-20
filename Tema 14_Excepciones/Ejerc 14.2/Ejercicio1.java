@@ -11,7 +11,7 @@ public class Ejercicio1 {
     public static void main(String[] args){
 
         Scanner s = new Scanner(System.in);
-        int max = Integer.MIN_VALUE;
+        int max = Integer.MIN_VALUE; // usamos la función del min y max valor
         int num;
 
         System.out.println("Por favor, inserta 6 números: ");
