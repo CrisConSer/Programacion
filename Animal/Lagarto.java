@@ -1,7 +1,7 @@
 public class Lagarto extends Animal{
   private int longitud; // longitud que tiene el lagarto
 
-  public Lagarto(){
+  public Lagarto(int i){
     super(nombre);
     this.longitud=120;
   }
